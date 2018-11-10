@@ -4,11 +4,6 @@
 <title>Sign Up</title>
 <style type="text/css">
 
-	body {
-    
-}
-
-
 .header {
     background-image: url('https://www.albertaac.ca/wp-content/uploads/banner-img-1.jpg');
     padding: 25px;
@@ -78,6 +73,34 @@
     box-sizing: border-box;
 }
 
+.form-control {
+	  width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+}
+
+.button {
+	cursor: pointer;
+	background-color: #4CAF50;
+	color: white;
+}
+
+.footer {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+
+}
+
+.danger-text {
+	color: red;
+}
+
+.hidden-text {
+	color: green;
+}
+
 </style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -103,25 +126,30 @@
 	    <form action="#" name="register-form">
 	        <div class="form-group">
 	            <p><b>Họ và Tên</b></p>
-	            <input type="text" name="fullname" class="form-control">
+	            <input type="text" name="fullName" placeholder="Tối đa 50 ký tự" class="form-control">
+	            <span class="danger-text hidden-text"></span>
 	        </div>
 	        <div class="form-group">
 	            <p><b>Email</b></p>
-	            <input type="email" name="email" class="form-control">
+	            <input type="email" name="email" placeholder="Bắt buộc đúng định dạng Email" class="form-control">
+	            <span class="danger-text hidden-text"></span>
 	        </div>
 	        <div class="form-group">
 	            <p><b>Phone</b></p>
-	            <input type="text" name="phone" class="form-control">
+	            <input type="text" name="phone" placeholder="+84" class="form-control">
+	            <span class="danger-text hidden-text"></span>
 	        </div>
 	        <div class="form-group">
 	            <p><b>Giới tính</b></p>
 						<label class="container">Nam
 					<input type="radio" checked="checked" name="radio">
 					<span class="checkmark"></span>
+					<br>
 						</label>
 						<label class="container">Nữ
 					<input type="radio" name="radio">
 					<span class="checkmark"></span>
+					<br>
 						</label>
 						<label class="container">Không xác định
 					<input type="radio" name="radio">
@@ -138,19 +166,26 @@
 	        </div>
 	        <div class="form-group">
 	            <p><b>Giới thiệu bản thân</b></p>
-	            <input type="text" name="about-you" class="form-control">
+	            <input style="height: 200px;" type="text" name="about-you" placeholder="Tùy chọn" class="form-control">
 	        </div>
 	        <div class="form-group">
 	            <p>&nbsp;</p>
-	            <input type="button" name="btn-submit" class="form-control" value="Đăng Ký">
-	            <input type="reset" name="btn-reset" class="form-control" value="Làm Lại">
+	            <input type="button" name="btn-submit" class="form-control button" value="Đăng Ký">
+	            <input type="reset" name="btn-reset" class="form-control button" value="Làm Lại">
 	        </div>
 	    </form>
+</div>
+
+<div class="footer">
+	<p><b>Thông tin sinh viên</b></p>
+	<p>Họ tên: Đặng Tiểu Bình</p>
+	<p>Lớp T1808A</p>
+	<p>Email binhsaveup@gmail.com binhdtth1807042@fpt.edu.vn</p>
 </div>
  
 
 
-<script type="text/javascript" src="sign-up-js.js"></script>
+<script type="text/javascript" src="baitap.js"></script>
 
 </body>
 </html>
