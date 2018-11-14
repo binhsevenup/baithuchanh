@@ -123,7 +123,7 @@
 
 <div class="body">
   	<h1 style="text-align: center">ĐĂNG KÝ THÔNG TIN NGƯỜI DÙNG</h1>
-	    <form action="#" name="register-form">
+	    <form action="#" name="register-form" id="register-form">
 	        <div class="form-group">
 	            <p><b>Họ và Tên</b></p>
 	            <input type="text" name="fullName" placeholder="Tối đa 50 ký tự" class="form-control">
@@ -132,6 +132,21 @@
 	        <div class="form-group">
 	            <p><b>Email</b></p>
 	            <input type="email" name="email" placeholder="Bắt buộc đúng định dạng Email" class="form-control">
+	            <span class="danger-text hidden-text"></span>
+	        </div>
+	        <div class="form-group">
+	            <p><b>Password</b></p>
+	            <input type="password" name="password" class="form-control">
+	            <span class="danger-text hidden-text"></span>
+	        </div>
+	        <div class="form-group">
+	            <p><b>Confirm Password</b></p>
+	            <input type="password" name="confirm-password" class="form-control">
+	            <span class="danger-text hidden-text"></span>
+	        </div>
+	        <div class="form-group">
+	            <p><b>Phone</b></p>
+	            <input type="text" name="phone" placeholder="+84" class="form-control">
 	            <span class="danger-text hidden-text"></span>
 	        </div>
 	        <div class="form-group">
@@ -184,8 +199,12 @@
 </div>
  
 
-
-<script type="text/javascript" src="baitap.js"></script>
+<script src="js/library/jquery-3.3.1.min.js"></script>
+<script src="js/library/jquery.validate.min.js"></script>
+<script src="js/library/additional-mothods.min.js"></script>
+<script src="js/config.js"></script>
+<script src="baitap.js"></script>
 
 </body>
 </html>
+
